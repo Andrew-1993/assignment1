@@ -35,8 +35,8 @@ Hint: use list comprehension <<new_list>> = [expression for item in list1 for y 
 
 list1 = ["Hello ", "take "]
 list2 = ["Dear", "Sir"]
-list3 = [x + y for x in list1 for y in list2]
-print(list3)
+new_list = [x + y for x in list1 for y in list2]
+print(new_list)
 
 #result = ['Hello Dear', 'Hello Sir', 'take Dear', 'take Sir']
 
@@ -49,9 +49,9 @@ print(output)
 #result = [5, 10, 15, 200, 25, 50, 200]
 
 """ Task 6 -count number of occurrences of x in the given list"""
-lst = [15, 6, 7, 10, 12, 20, 10, 28, 10]
+list = [15, 6, 7, 10, 12, 20, 10, 28, 10]
 x = 10
-print(lst.count(x))
+print(list.count(x))
 #result : 3  #10 appears three times in given list.
 
 lst = [8, 6, 8, 10, 8, 20, 10, 8, 8]
@@ -65,3 +65,17 @@ Hint: list comprehension"""
 list1 = [5, 20, 15, 20, 25, 50, 20]
 list2 = [x for x in list1 if x!=20]
 print(list2)
+
+""" Task 8 - Write a program to return the middle value of a list. If there are 2 middle values, return the second
+"""
+
+names = ['Ade', 'orange', 'pineapple', 'apples', 'mangoes']
+middle_name = names[len(names)//2]
+print(middle_name)
+#result = 'pineapple'
+
+age = [10, 3, 45, 67, 89.0, 45]
+middle_numb = age[len(age)//2]
+print(middle_numb)
+#result = 67
+
